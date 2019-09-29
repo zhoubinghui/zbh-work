@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        } */
+    .blue{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+       var divs=document.getElementsByTagName('div');
+      for(i=0;i<divs.length;i++){
+          
+       divs[i].style.width='50px';
+        
+       divs[i].style.height='50px';
+       i==2?divs[2].className='blue':
+       divs[i].style.backgroundColor='red';  
+       divs[i].style.display='inline-block';
+       divs[i].style.margin='20px';
+    //    divs[2].style.backgroundColor='blue';
+       }
+    </script>
+</body>
+</html>
+<!-- ##9.23
+需求:  
+1.在html上创建6个div元素  
+2.利用js赋予"所有"div样式,样式内容为:50*50,背景红色,间距20px,并横向排列  
+3.请不要添加任何id或class类
+4.给第三个div用js增加一个"blue"类,在css中定义blue类的背景颜色为蓝色 -->
