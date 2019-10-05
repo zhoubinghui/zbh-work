@@ -1,0 +1,176 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size:16px ;
+	display: flex;
+}
+/*下拉菜单*/
+/*.wrap{
+	width: 800px;
+	margin: 0 auto;
+	}
+ .clear{
+ 	clear: both;
+ 	} 
+ 
+ul,li{
+	list-style: none;
+	}
+nav .level>li{
+	float: left;
+	width: 16.66%;
+	text-align: center;
+	background: #D3D3D3;
+	padding: 10px 0;
+	font-size: 16px;
+	}
+nav .level>li a{
+	color: black;
+	}
+
+nav .two{
+	display: none;
+	}
+nav .level>li:hover .two{
+	display: block;*/
+
+
+
+select {
+   background:#D3D3D3 ;
+   border: none;
+   font-size: 14px;
+   height: 40px;
+   padding: 0  0 0 20px; /* If you add too much padding here, the options won't show in IE */
+   width: 220px;
+   appearance:none;  
+   background: url(zbh-png/向下 箭头.png) no-repeat scroll right center transparent;
+}
+
+a{   
+	 color: #373737;
+	 text-decoration:none;
+}
+
+#right{
+	float: right;
+}
+#right a{
+	padding:0 30px;
+}
+/*--------------------------------------*/
+.content{       
+				width: 1000px;
+		        height: 1200px;
+				margin: 0 auto;
+				/*弹性布局*/
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 20px;
+			}
+.fur{          
+	            /*padding:  0 0 20px 0 ;*/
+				width: 270px;
+				height: 396px;
+				margin: 0 auto;
+			}
+.fur-img{       
+	           
+				width: 270px;
+				height: 300px;
+				position: relative;
+			}
+.fur-h div{    
+	            display: none;
+	            border-radius:50% ;
+	            text-align: center;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #E8E8E8;
+				background-color: #FFFFFF;
+				}
+.fur-h{        
+	            margin-top: 10px;
+	            padding: 150px 20px;
+				position: absolute;
+				top: 0px;
+				left: -40px;
+			 
+			}
+
+.fur:hover .fur-h div{
+	            transform: translateX(40px);
+				transition: all linear 0.4s;
+	            display: block;
+				
+					
+			}
+.name-a:hover{
+	color: #FF8C00;
+}
+h3{
+	font-size:16px ;
+	font-weight: 400;
+}
+/*浮现小图片*/
+#eyes,#heart,#xh{
+	margin-top: 5px;
+	width: 22px;
+	height:22px ;
+}
+/*价格字体*/		
+#money{
+	box-sizing: border-box;
+	color: #FF5151;
+	font-weight: 600;
+}
+/*页面翻页*/
+nav{
+	display: block;
+	
+}
+.pagination{
+	    justify-content: center;
+}
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+}
+ul {
+    margin: 0;
+    padding: 0;
+
+}
+.pagination li{
+	padding: 0px 20px;
+	
+}
+.pagination li .page-numbers {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    border: 1px solid #D3D3D3;
+    }
+.pagination li .page-number {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    background-color: #ff5151;
+    border-style:1px solid;
+    color: #FFFFFF;
+    }
+.pagination li .dot{
+	     width: 5px;
+         height: 5px;
+         line-height: 5px;
+	    background-color: #ff5151;
+	    display: inline-block;
+}
